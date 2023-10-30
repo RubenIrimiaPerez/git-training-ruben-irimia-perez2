@@ -20,3 +20,16 @@ public class Main {
         
         h1.start();
         h2.start();
+try {
+            h1.join();
+            h2.join();
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        System.out.println("Hay un total de " + resultados[0] + " vocales  ");
+        
+    }
+
+}
