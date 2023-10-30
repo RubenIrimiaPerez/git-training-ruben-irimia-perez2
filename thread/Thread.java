@@ -23,3 +23,14 @@ public class Thread extends Thread {
             if (Character.isUpperCase(sub.charAt(i))) {
             }
         }
+String minus = sub.toLowerCase();
+        for (int i = 0; i < sub.length(); i++) {
+            if ((minus.charAt(i) == 'a') || (minus.charAt(i) == 'e') || (minus.charAt(i) == 'i')
+                    || (minus.charAt(i) == 'o') || (minus.charAt(i) == 'u')) {
+                vocal++;
+            }
+        }
+        array[0] += vocal;
+
+    }
+}
